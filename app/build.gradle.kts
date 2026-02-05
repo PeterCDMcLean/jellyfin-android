@@ -136,14 +136,7 @@ dependencies {
 
     // Network
     val sdkVersion = findProperty("sdk.version")?.toString()
-    implementation(libs.jellyfin.sdk) {
-        // Change version if desired
-        when (sdkVersion) {
-            "local" -> version { strictly(JellyfinSdk.LOCAL) }
-            "snapshot" -> version { strictly(JellyfinSdk.SNAPSHOT) }
-            "unstable-snapshot" -> version { strictly(JellyfinSdk.SNAPSHOT_UNSTABLE) }
-        }
-    }
+	implementation("com.github.PeterCDMcLean:jellyfin-sdk-kotlin:release-1.6.z-SNAPSHOT")
     implementation(libs.okhttp)
     implementation(libs.okio)
     implementation(libs.coil)
