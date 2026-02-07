@@ -137,6 +137,7 @@ dependencies {
     // Network
     val sdkVersion = findProperty("sdk.version")?.toString()
     implementation("com.github.PeterCDMcLean.jellyfin-sdk-kotlin:jellyfin-core-android:release-1.6.z-SNAPSHOT")
+    implementation("androidx.media3:media3-datasource-okhttp")
     implementation(libs.okhttp)
     implementation(libs.okio)
     implementation(libs.coil)
