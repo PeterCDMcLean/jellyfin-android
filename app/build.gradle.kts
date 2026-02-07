@@ -136,7 +136,7 @@ dependencies {
 
     // Network
     val sdkVersion = findProperty("sdk.version")?.toString()
-    implementation("com.github.PeterCDMcLean:jellyfin-sdk-kotlin:jellyfin-core-android-release:release-1.6.z-a5327fd936-1")
+    implementation("com.github.PeterCDMcLean.jellyfin-sdk-kotlin:jellyfin-core-android:release-1.6.z-a5327fd936-1")
     implementation(libs.okhttp)
     implementation(libs.okio)
     implementation(libs.coil)
